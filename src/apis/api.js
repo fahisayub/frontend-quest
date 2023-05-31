@@ -1,4 +1,4 @@
-const BASE_URL="http://31.220.48.246:4000/"
+const BASE_URL="https://questbackend.onrender.com/"
 export const REGISTER_API =()=>BASE_URL+"user/register"
 export const LOGIN_API =()=>BASE_URL+"user/login"
 export const CREATE_QUEST =()=>BASE_URL+"quest/create"

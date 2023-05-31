@@ -20,7 +20,7 @@ export default function QuestItem({data,name,tokens,description,task,sdate,edate
                     <HStack><Badge colorScheme={YELLOW} fontSize={"15px"} bg={TRANSPARENT}>{tokens} xp</Badge>
                     <Text color="#AEB1B3" fontSize={"11px"}>To Everyone</Text>
                     </HStack>
-                    <Button bg={TRANSPARENT} _hover={{bg:TRANSPARENT}} _active={{bg:TRANSPARENT}}>{task.split("|").length} Tasks</Button>
+                    <Button bg={TRANSPARENT} _hover={{bg:TRANSPARENT}} _active={{bg:TRANSPARENT}}>{task?.split("|").length} Tasks</Button>
 
 
                 </Flex>

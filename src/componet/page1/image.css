@@ -236,6 +236,8 @@
 }
 .textOnImg{
     color: white; 
+    text-align:justify;
+    word-spacing: normal;
 }
 
 .img3 {

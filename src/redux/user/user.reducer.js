@@ -1,9 +1,9 @@
 import { SET_WALLET ,SET_Xp } from "./user.type"
-
+let XP=localStorage.getItem('Xp')
 const initialState = {
     walletAddress:"Connet to wallet",
     connectionStatus:false,
-    pointXp:0,
+    pointXp:XP||0,
     secretToken:"",
     userData:[]
 }

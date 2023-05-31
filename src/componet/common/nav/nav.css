@@ -23,7 +23,12 @@
 }
 
 #connect_wallet {
+  border-radius:50px;
+  background-color: blue;
  
+}
+#connect_wallet:hover{
+  background-color: rgb(5, 5, 175);
 }
 
 .navbarBtn button {
@@ -35,7 +40,6 @@
   background-color: blue;
   color: white;
   font-size: 20px;
-  border: 2px solid #adc9ff;
 }
 
 .navbaricon {

@@ -22,7 +22,7 @@ import { IntilizeData } from "../../services/connectWallet";
 
 function Quest() {
   const [data, setData] = useState([]);
-  const [TaskData, setTaskData] = useState()
+  const [TaskData, setTaskData] = useState([])
   let params = useParams();
   let { id } = params;
   let [loading, setLoading] = useState(false);
@@ -68,7 +68,7 @@ function Quest() {
           link={"/Quest/" + data[0]._id}
           pname={data[0].name}
           xppoints={data[0].tokens}
-          task={data[0].task.split("|").length}
+          task={data[0].task?.split("|")?.length}
           ttask="5"
           likes="687"
           para1={data[0].description}
@@ -92,8 +92,8 @@ function Quest() {
             
 
           </Flex>
-          {TaskData.split("|").map((el) => (
-            <TaskCard task={el.trim()}   xppoints={TaskData} questId={data[0]._id} />
+          {TaskData?.split("|")?.map((el,i) => (
+            <TaskCard key={i} task={el.trim()}   xppoints={TaskData} questId={data[0]._id} />
           ))}
         </VStack>
       </Flex>
